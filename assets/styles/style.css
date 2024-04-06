@@ -1,4 +1,3 @@
-/*���˴����ѻ���,����Դ���롣Դ���ַΨһ����: http://www.bootstrapmb.com/item/8423��(���˵��������ʾ��ῴ��,���ص�Դ����û�С�)*/
 @import url(vendors/bootstrap.min.css);
 @import url(vendors/swiper.min.css);
 @import url(../icons/style.css);
@@ -2298,4 +2297,8 @@ button:focus {
 .preloader {
   display: none;
   z-index: -1;
+}
+
+.header__photo-img {
+  object-fit: scale-down;
 }

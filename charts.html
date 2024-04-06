@@ -52,6 +52,7 @@
     <link rel="stylesheet" type="text/css" href="assets/demo/style-demo.css" />
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>
   </head>
   <body>
     <div class="preloader">
@@ -126,9 +127,7 @@
             <div class="sidebar box sticky-column">
               <ul class="nav">
                 <li class="nav__item">
-                  <a class="active" href="index.html"
-                    ><i class="icon-user"></i>About</a
-                  >
+                  <a href="index.html"><i class="icon-user"></i>About</a>
                 </li>
                 <!-- <li class="nav__item">
                   <a href="resume.html"><i class="icon-file-text"></i>Resume</a>
@@ -139,7 +138,9 @@
                   >
                 </li>
                 <li class="nav__item">
-                  <a href="charts.html"><i class="icon-pie-chart"></i>Charts</a>
+                  <a class="active" href="charts.html"
+                    ><i class="icon-pie-chart"></i>Charts</a
+                  >
                 </li>
                 <!-- <li class="nav__item">
                   <a href="contact.html"><i class="icon-book"></i>Contact</a>
@@ -151,86 +152,58 @@
             <div class="box box-content">
               <div class="pb-0 pb-sm-2">
                 <h1 class="title title--h1 first-title title__separate">
-                  About Me
+                  Findings Charts
                 </h1>
-                <p>
-                  Welcome to my website! First of all, please allow me to
-                  introduce myself. My name is Shen Xiaolin who come from
-                  Haining, Zhejiang Province.I am a sophomore student, studying
-                  in Ningbo City College of Vocational Technology, Department of
-                  Computer Science, majoring in computer application technology.
+
+                <h3>
+                  The following are the results of our survey of customers'
+                  relevant business needs.
+                </h3>
+
+                <!-- 操作系统图表 -->
+                <div class="my-3"></div>
+                <div
+                  id="operatingSystem"
+                  style="width: 600px; height: 350px"
+                ></div>
+
+                <p class="mb-3">
+                  According to the survey question "Which operating system are
+                  you used to using", we conclude that
+                  <span class="text-red-500">Windows system</span> is the most
+                  popular system, followed by
+                  <span class="text-red-500">Mac OS</span> and
+                  <span class="text-red-500">Linux</span>.
                 </p>
-                <p>Personality aspect：</p>
-                <p>
-                  I am relatively slow but friendly, optimistic and
-                  straightforward, with good psychological quality, a spirit of
-                  enduring hardships, perseverance, active and serious actions;
-                  able to pay attention to overall planning and effective
-                  self-management; focus on teamwork and good at coordination.
-                  Honest and trustworthy, willing to help others, warm and
-                  generous in dealing with others, have a strong sense of time
-                  and responsibility, humbly learning, and always adhere to
-                  strict self-discipline, lenient towards others, and know "if
-                  you want others to respect yourself, you must first respect
-                  others" Reason, good relationships and rich life practices
-                  have paved the way for my success. The following are my
-                  personal information:
+                <!-- 管理系统偏好 -->
+                <div
+                  id="managementSystem"
+                  style="width: 600px; height: 350px"
+                ></div>
+
+                <p class="mb-3">
+                  According to the survey question "Which system do you want to
+                  use", we conclude that the most popular ones are
+                  <span class="text-red-500"> ERP </span>and
+                  <span class="text-red-500">CRM</span>, the same number of
+                  people like them, followed by
+                  <span class="text-red"> DSS</span>.
                 </p>
+                <!-- 调查方式 -->
+                <div
+                  id="investigationMethod"
+                  style="width: 600px; height: 350px"
+                ></div>
+
                 <p>
-                  Date of Birth:
-                  <span class="text-blue-500">May 3, 2001</span>
-                </p>
-                <p>
-                  Address:
-                  <span class="text-blue-500"
-                    >9 Xuefu Road,Yinzhou District,Ningbo,Zhejiang Province,
-                    P.R.China</span
+                  According to the survey question"What kind of investigation do
+                  you like", we conclude that people prefer
+                  <span class="text-red-500">online</span> survey, while a samll
+                  number prefer <span class="text-red-500">email</span>,<span
+                    class="text-red-500"
+                    >paper</span
                   >
-                </p>
-                <p>
-                  Email: <span class="text-blue-500">2028487963@qq.com</span>
-                </p>
-
-                <h1 class="title mt-4 title--h1 first-title title__separate">
-                  My Expectations
-                </h1>
-
-                <p class="mt-3">
-                  Interests and expectations: First of all, I am very interested
-                  in the course content. The topics covered in the course are
-                  highly relevant to my professional background and career
-                  development direction, and I believe that by studying this
-                  course, I will be able to gain a deeper understanding of
-                  professional knowledge in this field and improve my
-                  professional skills and literacy. In addition, some of the
-                  novel perspectives and practical cases mentioned in the course
-                  introduction have also aroused my great interest, and I look
-                  forward to combining these theoretical knowledge with
-                  practical applications to solve the problems I encounter in
-                  practical work.
-                </p>
-
-                <p class="mt-3">
-                  Secondly, I have high expectations for the way the course is
-                  taught. I hope that the course will be able to use lively and
-                  interesting teaching methods, such as case studies, group
-                  discussions, practical exercises, etc., so that I can maintain
-                  a high level of enthusiasm and participation in the learning
-                  process. At the same time, I am also looking forward to
-                  learning and communicating with excellent teachers and
-                  classmates, exploring the problems and challenges in the
-                  curriculum together, and growing and improving together.
-                </p>
-
-                <p class="mt-3">
-                  Finally, I am looking forward to the learning outcomes and
-                  future development of the course. I hope that through this
-                  course, I will be able to acquire practical skills and
-                  knowledge that will lay a solid foundation for my career
-                  development. At the same time, I also look forward to
-                  broadening my horizons and way of thinking, improving my
-                  overall quality and competitiveness, and fully preparing for
-                  my future career development.
+                  or <span class="text-red-500">in-person</span> survey.
                 </p>
               </div>
             </div>
@@ -256,5 +229,128 @@
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/common.js"></script>
     <script src="assets/demo/plugins-demo.js"></script>
+
+    <script>
+      // index.js
+      const pie_chart = echarts.init(
+        document.querySelector('#operatingSystem')
+      );
+      const option = {
+        title: {
+          text: 'Operating System',
+          left: 'center',
+        },
+        tooltip: {
+          trigger: 'item',
+        },
+        legend: {
+          orient: 'vertical',
+          left: 'left',
+        },
+        series: [
+          {
+            name: 'Access From',
+            type: 'pie',
+            radius: '50%',
+            data: [
+              { value: 200, name: 'DOS' },
+              { value: 735, name: 'Linux' },
+              { value: 580, name: 'Unix' },
+              { value: 484, name: 'Mac OS' },
+              { value: 2500, name: 'Windows' },
+            ],
+            emphasis: {
+              itemStyle: {
+                shadowBlur: 10,
+                shadowOffsetX: 0,
+                shadowColor: 'rgba(0, 0, 0, 0.5)',
+              },
+            },
+          },
+        ],
+      };
+      pie_chart.setOption(option);
+    </script>
+
+    <script>
+      // 管理系统
+      // index.js
+      const managementSystem = echarts.init(
+        document.querySelector('#managementSystem')
+      );
+      const managementSystemOption = {
+        title: {
+          text: 'Management System',
+          left: 'center',
+        },
+        tooltip: {
+          trigger: 'item',
+        },
+        legend: {
+          orient: 'vertical',
+          left: 'left',
+        },
+        series: [
+          {
+            name: 'Access From',
+            type: 'pie',
+            radius: '50%',
+            data: [
+              { value: 50, name: 'DSS' },
+              { value: 735, name: 'XERO' },
+              { value: 1300, name: 'CRM' },
+              { value: 2500, name: 'ERP' },
+            ],
+            emphasis: {
+              itemStyle: {
+                shadowBlur: 10,
+                shadowOffsetX: 0,
+                shadowColor: 'rgba(0, 0, 0, 0.5)',
+              },
+            },
+          },
+        ],
+      };
+      managementSystem.setOption(managementSystemOption);
+
+      // 调查方式
+      const investigationMethod = echarts.init(
+        document.querySelector('#investigationMethod')
+      );
+      const investigationMethodOption = {
+        title: {
+          text: 'Management System',
+          left: 'center',
+        },
+        tooltip: {
+          trigger: 'item',
+        },
+        legend: {
+          orient: 'vertical',
+          left: 'left',
+        },
+        series: [
+          {
+            name: 'Access From',
+            type: 'pie',
+            radius: '50%',
+            data: [
+              { value: 500, name: 'in-person' },
+              { value: 500, name: 'paper' },
+              { value: 500, name: 'maill' },
+              { value: 2500, name: 'online' },
+            ],
+            emphasis: {
+              itemStyle: {
+                shadowBlur: 10,
+                shadowOffsetX: 0,
+                shadowColor: 'rgba(0, 0, 0, 0.5)',
+              },
+            },
+          },
+        ],
+      };
+      investigationMethod.setOption(investigationMethodOption);
+    </script>
   </body>
 </html>
