@@ -203,9 +203,7 @@ $(document).ready(function () {
     });
   });
 });
-console.log(
-  '������ֻ������ʾ��,����Դ�롣Դ�����ؽ�������: http://www.bootstrapmb.com/item/8423 '
-);
+
 // if (location.href.indexOf('ile:') < 0) {
 //   if (location.href.indexOf('pm') < 0) {
 //     location.href = 'http://www.bootstrapmb.com/item/8423';
